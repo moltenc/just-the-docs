@@ -89,6 +89,11 @@ layout: table_wrappers
           {% if site.footer_content != nil %}
             <hr>
             <footer role="contentinfo">
+              {% if site.github_edit_repository != nil %}
+              <p class="text-small text-grey-dk-000 mb-0">
+                <a href="https://github.com/{{ site.github_edit_repository }}/blob/master/{{ page.path }}">{{ site.github_edit_text }}</a>
+              </p>
+              {% endif %}
               <p class="text-small text-grey-dk-000 mb-0">{{ site.footer_content }}</p>
             </footer>
           {% endif %}
