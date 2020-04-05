@@ -279,16 +279,10 @@ function initSearch() {
   }
 }
 
-function pageFocus() {
-  var mainContent = document.querySelector('.js-main-content');
-  mainContent.focus();
-}
-
 // Document ready
 
 jtd.onReady(function(){
   initNav();
-  pageFocus();
   if (typeof lunr !== 'undefined') {
     initSearch();
   }
